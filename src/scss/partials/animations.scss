@@ -1,0 +1,161 @@
+
+
+// partials/animations.scss
+
+@keyframes bounceAnimation {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.text-animation {
+    animation: bounceAnimation 2s infinite; // Apply the bouncing animation to text
+}
+
+.image-animation {
+    animation: bounceAnimation 2s infinite; // Apply the same bouncing animation to the image
+    display: block; // Ensure the image is a block-level element
+    margin: 20px auto; // Center the image
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Partial för skugg- och ljuseffekter
+
+@keyframes shadowEffect {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+}
+/*
+// Användning i din huvudstil
+.element {
+    animation: shadowEffect 3s infinite;
+}
+// Huvudstil för färgövergång
+.element {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    transition: background 0.5s ease;
+}
+
+// Ändring vid hovring
+.element:hover {
+    background: linear-gradient(to right, #ff4174, #ff7e5f);
+}
+// Huvudstil för parallaxeffekt
+.background {
+    background-image: url('parallax-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateZ(0);
+    animation: parallaxEffect 10s infinite;
+}
+
+// Keyframes för parallaxeffekt
+@keyframes parallaxEffect {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+// Huvudstil för knapp med övergång
+.button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+// Ändring vid hovring
+.button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+// Keyframes för laddningseffekt
+@keyframes loading {
+    0% {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+// Huvudstil för laddningseffekt
+.loader {
+    height: 2px;
+    background-color: #333;
+    animation: loading 2s infinite;
+}
+// Huvudstil för navigationsmeny
+.navbar {
+    height: 60px;
+    transition: height 0.3s ease;
+}
+
+// Ändring vid scrollning
+.navbar.scrolled {
+    height: 40px;
+}
+// Huvudstil för texteffekt
+.text-effect {
+    text-shadow: 2px 2px 5px #333;
+    transform: rotate(5deg);
+    font-size: 1.2em;
+    transition: text-shadow 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
+}
+
+// Ändring vid hovring
+.text-effect:hover {
+    text-shadow: 4px 4px 8px #555;
+    transform: rotate(10deg);
+    font-size: 1.5em;
+}
+// Huvudstil för bildrotation och zoom
+.image {
+    transform: rotate(0deg) scale(1);
+    transition: transform 0.5s ease;
+}
+
+// Ändring vid hovring
+.image:hover {
+    transform: rotate(15deg) scale(1.2);
+}
