@@ -23,6 +23,54 @@
     display: block; // Ensure the image is a block-level element
     margin: 20px auto; // Center the image
 }
+// Partial for Moving Object Animation
+@keyframes moveObject {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+// Style for Moving Object
+.moving-object {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    animation: moveObject 3s infinite;
+}
+// Partial for User Interaction Animation
+@keyframes interactButton {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+// Style for Interactive Button
+.interactive-button {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    // Apply animation on hover
+    &:hover {
+        background-color: #219653;
+        animation: interactButton 1s infinite;
+    }
+}
 
 
 
