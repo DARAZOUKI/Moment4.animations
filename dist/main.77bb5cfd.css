@@ -240,6 +240,7 @@ footer {
   height: 50px;
   background-color: #34dbd5;
   animation: moveObject 3s infinite;
+  margin: 20px auto;
 }
 
 @keyframes interactButton {
@@ -260,6 +261,7 @@ footer {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 20px auto;
 }
 .interactive-button:hover {
   background-color: #b259aa;

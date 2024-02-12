@@ -42,6 +42,7 @@
     height: 50px;
     background-color: #34dbd5;
     animation: moveObject 3s infinite;
+    margin: 20px auto; // Center the object
 }
 //Interaction Animation
 @keyframes interactButton {
@@ -64,6 +65,7 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 20px auto; // Center the button
 
     // Apply animation on hover
     &:hover {
