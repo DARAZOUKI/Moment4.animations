@@ -1,0 +1,111 @@
+@keyframes bounceAnimation {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+.text-animation {
+  animation: bounceAnimation 2s infinite;
+}
+
+.image-animation {
+  animation: bounceAnimation 2s infinite;
+  display: block;
+  margin: 20px auto;
+}
+
+@keyframes moveObject {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.moving-object {
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  animation: moveObject 3s infinite;
+}
+
+@keyframes interactButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.interactive-button {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.interactive-button:hover {
+  background-color: #219653;
+  animation: interactButton 1s infinite;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1em;
+  }
+}
+
+.content {
+  padding: 20px;
+  max-width: 800px;
+  margin: 90px auto;
+}
+.content h1 {
+  color: #3498db;
+  font-size: 1.5em;
+}
+.content p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 1024px) and (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    max-width: 50ch;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ffffff;
+    color: #333333;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0e0437;
+    color: #ffffff;
+  }
+}
