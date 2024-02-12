@@ -37,7 +37,7 @@
 }
 
 .moving-object {
-  background-color: #3498db;
+  background-color: #34dbd5;
   width: 50px;
   height: 50px;
   animation: 3s infinite moveObject;
@@ -60,14 +60,14 @@
 .interactive-button {
   color: #fff;
   cursor: pointer;
-  background-color: #27ae60;
+  background-color: #5c0343;
   border: none;
   padding: 10px 20px;
   transition: background-color .3s, transform .2s;
 }
 
 .interactive-button:hover {
-  background-color: #219653;
+  background-color: #b259aa;
   animation: 1s infinite interactButton;
 }
 
