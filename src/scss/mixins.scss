@@ -1,3 +1,5 @@
+ @import 'variables';
+  
   // Mixins
   @mixin box-shadow($x, $y, $blur, $color) {
     box-shadow: $x $y $blur $color;
@@ -12,11 +14,4 @@
     @extend .box-with-shadow;
 }
 
-// If/else-satser
-$is-light-theme: true;
 
-@if $is-light-theme {
-    background-color: $light-primary-color;
-} @else {
-    background-color: $dark-primary-color;
-}
