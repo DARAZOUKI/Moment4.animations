@@ -250,14 +250,14 @@ footer {
 
 @media (width <= 1024px) {
   .image-animation .image-animation {
-    width: 100%;
+    width: 80%;
     margin-left: 10px;
   }
 }
 
 @media (width <= 768px) {
   .image-animation .image-animation {
-    width: 100%;
+    width: 60%;
     margin-left: 10px;
   }
 }
