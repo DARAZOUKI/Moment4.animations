@@ -1,0 +1,22 @@
+  // Mixins
+  @mixin box-shadow($x, $y, $blur, $color) {
+    box-shadow: $x $y $blur $color;
+}
+
+.box-with-shadow {
+    @include box-shadow(2px, 2px, 5px, #888);
+}
+
+// Selector inheritance
+.menu-btn.close {
+    @extend .box-with-shadow;
+}
+
+// If/else-satser
+$is-light-theme: true;
+
+@if $is-light-theme {
+    background-color: $light-primary-color;
+} @else {
+    background-color: $dark-primary-color;
+}
