@@ -248,6 +248,20 @@ footer {
   display: block;
 }
 
+@media (width <= 1024px) {
+  .image-animation .image-animation {
+    max-width: 100%;
+    margin-left: 10px;
+  }
+}
+
+@media (width <= 768px) {
+  .image-animation .image-animation {
+    max-width: 100%;
+    margin-left: 10px;
+  }
+}
+
 @keyframes moveObject {
   0% {
     transform: translateX(0);
