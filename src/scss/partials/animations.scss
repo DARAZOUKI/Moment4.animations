@@ -24,18 +24,16 @@
     margin: 20px auto; // Center the image
 
     @media (max-width:1024px){
-        .image-animation{
             width:80%;
             margin-left: 10px;
-        }
+        
     }
     @media (max-width:768px){
-        .image-animation{
            width:60%;
             margin-left: 10px;
         }
     }
-}
+
 // Moving Object Animation
 @keyframes moveObject {
     0% {
