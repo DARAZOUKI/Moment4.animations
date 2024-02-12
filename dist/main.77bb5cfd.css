@@ -225,13 +225,13 @@ footer {
 }
 @media (max-width: 1024px) {
   .image-animation .image-animation {
-    max-width: 100%;
+    width: 100%;
     margin-left: 10px;
   }
 }
 @media (max-width: 768px) {
   .image-animation .image-animation {
-    max-width: 100%;
+    width: 100%;
     margin-left: 10px;
   }
 }
